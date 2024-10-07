@@ -40,7 +40,7 @@ export default function Body() {
         
                 <div className="bg-white h-fit flex flex-col justify-center items-center gap-5">
 
-                    <p className="Desc text-2xl p-5 ">Generate Random Memes.</p>
+                    <p className="DescM text-2xl p-5 ">Generate Random Memes.</p>
                     <hr />
                     {meme && (
                         <div className='text-center flex flex-col justify-center items-center '>
@@ -58,7 +58,9 @@ export default function Body() {
                     <br /><br />
                     <hr />
                     <br /><br />
+                    <p className='text-center DescM'>Meme Templates.</p>
                     <div className="TempContainer">
+                        
                         {templates.map((template) => (
                             
                             <div key={template.id} className='flex flex-col justify-center items-center'> {/* Ensure to use a unique key for each item */}
