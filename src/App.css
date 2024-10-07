@@ -16,7 +16,7 @@
 }
 .hero {
   width: 100%;
-  height: 50vh; /* Adjust based on the hero section size */
+  height: 70vh; /* Adjust based on the hero section size */
   overflow: hidden;
   position: relative;
   background-color: transparent;
@@ -30,7 +30,7 @@
   display: flex;
   overflow-x: auto;
   scroll-behavior: smooth;
-  padding: 20px;
+  padding: 30px;
   gap: 20px; /* Space between cards */
   align-items: center;
   scroll-snap-type: x mandatory; /* Snap behavior */
@@ -46,15 +46,17 @@
 }
 
 .card {
-  flex: 0 0 80%; /* Ensure each card takes full width */
-  height: 40vh;
-  width: 80vw;
+  flex: 0 0 90%; /* Ensure each card takes full width */
+  height: fit-content;
+  width: fit-content;
   background-color: white;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 20px;
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  flex-direction: row;
   justify-content: center;
   text-align: center;
   scroll-snap-align: center; /* Center card on scroll */
@@ -80,6 +82,12 @@
   padding: 10px;
   cursor: pointer;
   z-index: 1;
+  width: 40px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .scroll-btn.left {
@@ -93,7 +101,14 @@
 }
 
 .scroll-btn:hover {
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(219, 219, 219, 0.7);
   
 }
-
+.imgh{
+    border-radius: 25px;
+    padding: 50px;
+}
+.Desc{
+  font-family: Kanit,'Courier New', Courier, monospace;
+  font-size: 22px;
+}
