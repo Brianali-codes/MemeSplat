@@ -137,5 +137,55 @@
   font-size: 25px;
 }
 
+@media (max-width:768px){
+  .TempContainer{
+    display: flex;
+    flex-direction: column;
+  }
+  .TempContainer img{
+    width: 80%;
+  
+  }
+  .card {
+    flex: 0 0 90%; /* Ensure each card takes full width */
+    height: fit-content;
+    width: fit-content;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    scroll-snap-align: center; /* Center card on scroll */
+  }
+  .scroll-container {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: 20px;
+    gap: 20px; /* Space between cards */
+    align-items: center;
+    scroll-snap-type: x mandatory; /* Snap behavior */
+  }
+  .card{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+  .card img{
+    height: 50%;
+  }
+  .NVB p{
+    font-size: 20px;
+  }
+  .HeroImg{
+    width: 80%;
+    height: 90%;
+  }
 
+}
 
