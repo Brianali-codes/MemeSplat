@@ -105,6 +105,8 @@
   
 }
 .imgh{
+    height: 52vh;
+    width: 90vw;
     border-radius: 25px;
     padding: 50px;
 }

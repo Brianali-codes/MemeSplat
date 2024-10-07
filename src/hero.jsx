@@ -1,7 +1,8 @@
 import React, { useRef } from 'react';
-import HERO from './assets/home.jpg';
-import PEPE from './assets/pepe.webp';
+import MT from './assets/TTM.png';
+import LQ from './assets/LQW.png';
 import { Button } from "flowbite-react";
+import HERO from './assets/GTI.jpg'
 
 const HeroSection = () => {
   const scrollContainerRef = useRef(null);
@@ -31,25 +32,14 @@ const HeroSection = () => {
 
         <div className="card flex-shrink-0 w-screen md:w-1/3">
           <div>
-            <img src={HERO} alt="High-quality meme generation" className='imgh' />
+            <img src={LQ} alt="High-quality meme generation" className='imgh' />
           </div>
           <div className='text-start'>
             <p className='Desc'>Generate High Quality Memes. Using Open Source Apis from github. Credit to Dev Daksan (D3VD) on github for the Meme Generating Api tied to reddit Memes.</p>
+            <br />
             <p className='Desc'>View Their Github <a href="https://github.com/D3vd/Meme_Api/tree/master"><span className='text-cyan-400'>Here</span></a></p>
             <br />
-            <Button outline gradientDuoTone="purpleToPink">
-              Generate Memes
-            </Button>
-          </div>
-        </div>
-        
-        <div className="card flex-shrink-0 w-screen md:w-1/3">
-          <div>
-            <img src={HERO} alt="High-quality meme generation" className='imgh' />
-          </div>
-          <div className='text-start'>
-            <p className='Desc'>Generate High Quality Memes. Using Open Source Apis from github. Credit to Dev Daksan (D3VD) on github for the Meme Generating Api tied to reddit Memes.</p>
-            <p className='Desc'>View Their Github <a href="https://github.com/D3vd/Meme_Api/tree/master"><span className='text-cyan-400'>Here</span></a></p>
+            <p className='Desc'>This project is part of the few API projects i made therefore sharing it would be of help by a ton</p>
             <br />
             <Button outline gradientDuoTone="purpleToPink">
               Generate Memes
@@ -59,15 +49,31 @@ const HeroSection = () => {
 
         <div className="card flex-shrink-0 w-screen md:w-1/3">
           <div>
+            <img src={MT} alt="High-quality meme generation" className='imgh' />
+          </div>
+          <div className='text-start'>
+            <p className='Desc'>Generate High Quality Meme Templates. Using MemeGen.link Template Api. View The site <a href="https://memegen.link/" target='_blank'><span className='text-cyan-400'>Here</span></a></p>
+            <br />
+            <p className='Desc'>This Uses a different Meme Template APi to generate different Templates </p>
+            <br />
+            <Button outline gradientDuoTone="tealToLime">
+                Generate Templates.
+            </Button>
+          </div>
+        </div>
+
+        <div className="card flex-shrink-0 w-screen md:w-1/3">
+          <div>
             <img src={HERO} alt="High-quality meme generation" className='imgh' />
           </div>
           <div className='text-start'>
-            <p className='Desc'>Generate High Quality Memes. Using Open Source Apis from github. Credit to Dev Daksan (D3VD) on github for the Meme Generating Api tied to reddit Memes.</p>
-            <p className='Desc'>View Their Github <a href="https://github.com/D3vd/Meme_Api/tree/master"><span className='text-cyan-400'>Here</span></a></p>
+            <p className='Desc'>To view More Projetcs I made as well as my different roles in the programming World Check my github below:</p>
             <br />
-            <Button outline gradientDuoTone="purpleToPink">
-              Generate Memes
-            </Button>
+            <a href="https://github.com/gamerfunky78" target='_blank'>
+                <Button outline gradientDuoTone="purpleToBlue">
+                    View Github.
+                </Button>
+            </a>
           </div>
         </div>
       </div>
