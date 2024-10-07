@@ -114,3 +114,24 @@
   font-family: Kanit,'Courier New', Courier, monospace;
   font-size: 22px;
 }
+.IMG2{
+  height: 350px;
+  width: 350px;
+  border-radius: 10px;
+  border: 1px solid black;
+}
+.TempContainer{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 50px;
+}
+.HeroImg{
+  height: 500px;
+  width: 500px;
+  border-radius: 10px;
+  border: 1px solid black;
+}
+
+
+
+

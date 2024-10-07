@@ -42,7 +42,7 @@ const HeroSection = () => {
             <p className='Desc'>This project is part of the few API projects i made therefore sharing it would be of help by a ton</p>
             <br />
             <Button outline gradientDuoTone="purpleToPink">
-              Generate Memes
+              Generate Random Memes
             </Button>
           </div>
         </div>
@@ -57,7 +57,7 @@ const HeroSection = () => {
             <p className='Desc'>This Uses a different Meme Template APi to generate different Templates </p>
             <br />
             <Button outline gradientDuoTone="tealToLime">
-                Generate Templates.
+                View Meme Templates.
             </Button>
           </div>
         </div>
@@ -69,9 +69,11 @@ const HeroSection = () => {
           <div className='text-start'>
             <p className='Desc'>To view More Projetcs I made as well as my different roles in the programming World Check my github below:</p>
             <br />
+            <p className='Desc'>This Project is Made with ❤️ by Brian Ali</p>
+            <br />
             <a href="https://github.com/gamerfunky78" target='_blank'>
                 <Button outline gradientDuoTone="purpleToBlue">
-                    View Github.
+                    View My Github.
                 </Button>
             </a>
           </div>

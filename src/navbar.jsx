@@ -6,7 +6,7 @@ import menu from './assets/menu-burger.png'
 export default function Navbar() {
 
     return (
-        <div className="bg-black flex justify-between items-center flex-row p-5">
+        <div className="bg-white flex justify-between items-center flex-row p-5">
 
             <motion.div
                 initial={{ opacity: 0, }}
@@ -15,7 +15,7 @@ export default function Navbar() {
                 <img src={logo} alt="" />
             </motion.div>
 
-            <p className="TITLE text-cyan-300">
+            <p className="TITLE text-black">
 
                 <motion.span
                     initial={{ opacity: 0, y: 20, }}
