@@ -39,9 +39,11 @@ const HeroSection = () => {
             <br />
             <p className='Desc text-black dark:text-white'>View Their Github <a href="https://github.com/D3vd/Meme_Api/tree/master"><span className='text-cyan-400'>Here</span></a></p>
             <br />
-            <Button outline gradientDuoTone="purpleToPink">
-              Generate Random Memes
-            </Button>
+            <a href="#GENMEME">
+              <Button outline gradientDuoTone="purpleToPink">
+                Generate Random Memes
+              </Button>
+            </a>
           </div>
         </div>
 
@@ -55,9 +57,11 @@ const HeroSection = () => {
             <p className='Desc text-black dark:text-white'>View The site <a href="https://memegen.link/" target='_blank'><span className='text-cyan-400'>Here</span></a></p>
             
             <br />
-            <Button outline gradientDuoTone="tealToLime">
-                View Meme Templates.
-            </Button>
+            <a href="#GENTEMP">
+              <Button outline gradientDuoTone="tealToLime">
+                  View Meme Templates.
+              </Button>
+            </a>
           </div>
         </div>
 

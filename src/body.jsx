@@ -38,7 +38,7 @@ export default function Body() {
         
                 <div className="bg-white dark:bg-black h-fit flex flex-col justify-center items-center gap-5">
 
-                    <p className="DescM text-2xl p-5 text-black dark:text-white ">Generate Random Memes.</p>
+                    <p className="DescM text-2xl p-5 text-black dark:text-white " id='GENMEME'>Generate Random Memes.</p>
                     <hr />
                     {meme && (
                         <div className='text-center flex flex-col justify-center items-center '>
@@ -46,18 +46,25 @@ export default function Body() {
                             <br />
                             <img src={meme.url} alt={meme.title} className='HeroImg'/>
                             <br />
-                            <a href={meme.url} download>
-                                <Button outline gradientDuoTone="purpleToPink">
-                                    Generate Random Meme.
-                                </Button>
-                            </a>
-                            
+                            <div className='flex flex-col justify-center items-center'>
+                                    <a href={meme.url} download>
+                                        <Button outline gradientDuoTone="purpleToPink">
+                                            Go to Source
+                                        </Button>
+                                        
+                                    </a>
+                                    <br />
+                                    <Button outline gradientDuoTone="purpleToPink" onClick={generateMeme}>
+                                            Generate Random Meme
+                                    </Button>
+                            </div>
+                
                         </div>
                     )}
                     <br /><br />
                     <hr />
                     <br /><br />
-                    <p className='text-center DescM text-black dark:text-white'>Meme Templates.</p>
+                    <p className='text-center DescM text-black dark:text-white' id='GENTEMP'>Meme Templates.</p>
                     <div className="TempContainer">
                         
                         {templates.map((template) => (
