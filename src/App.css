@@ -18,7 +18,7 @@ html{
 }
 .hero {
   width: 100%;
-  height: 70vh; /* Adjust based on the hero section size */
+  height: 75vh; /* Adjust based on the hero section size */
   overflow: hidden;
   position: relative;
   background-color: transparent;
