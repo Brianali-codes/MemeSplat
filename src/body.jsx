@@ -12,6 +12,7 @@ export default function Body() {
             if (!response.ok) throw new Error('Failed to fetch meme');
             const data = await response.json(); // Correctly await the JSON parsing
             setMeme(data); // Save the fetched meme data
+            console.log(data)
         } catch (error) {
             console.error('Error fetching meme:', error);
         }
@@ -24,6 +25,7 @@ export default function Body() {
             if (!response2.ok) throw new Error('Failed to fetch templates');
             const data2 = await response2.json(); // Correctly await the JSON parsing
             setTemplates(data2); // Save the fetched templates data
+            console.log(data2)
         } catch (error) {
             console.error('Error fetching templates:', error);
         }
@@ -45,6 +47,12 @@ export default function Body() {
                             <h2 className='Desc text-black dark:text-white'>{meme.title}</h2>
                             <br />
                             <img src={meme.url} alt={meme.title} className='HeroImg'/>
+                            <br />
+                            <div className='flex flex-row justify-start Desc gap-4 border-solid border-2 border-black p-3 rounded-lg dark:border-white'>
+                                <p className='text-black dark:text-white'>👩🏻‍💻{meme.author}</p>
+                                <p className='text-black dark:text-white'>🧡{meme.ups}</p>
+                            </div>
+                            
                             <br />
                             <div className='flex flex-col justify-center items-center'>
                                     <a href={meme.url} download>
