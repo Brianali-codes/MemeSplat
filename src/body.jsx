@@ -41,10 +41,12 @@ export default function Body() {
             <p className="DescM text-2xl p-5 text-black dark:text-white " id='GENMEME'>Generate Random Memes.</p>
             <hr />
             {meme && (
-                <div className='STATS text-center justify-center items-center gap-5 '>
-
+                <>
+                    <h2 className='Desc text-black dark:text-white'>{meme.title}.</h2>
+                    <div className='STATS text-center justify-center items-center gap-5 '>
+                        
                     <div className='flex flex-col justify-center items-center'>
-                        <h2 className='Desc text-black dark:text-white'>{meme.title}.</h2>
+                        
                         <br />
                         <img src={meme.url} alt={meme.title} className='HeroImg' />
                         <br />
@@ -78,6 +80,8 @@ export default function Body() {
 
 
                 </div>
+                </>
+                
             )}
             <br /><br />
             <hr />
