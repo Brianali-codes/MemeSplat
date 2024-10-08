@@ -12,7 +12,6 @@ export default function Body() {
             if (!response.ok) throw new Error('Failed to fetch meme');
             const data = await response.json(); // Correctly await the JSON parsing
             setMeme(data); // Save the fetched meme data
-            console.log(data);
         } catch (error) {
             console.error('Error fetching meme:', error);
         }
@@ -25,7 +24,6 @@ export default function Body() {
             if (!response2.ok) throw new Error('Failed to fetch templates');
             const data2 = await response2.json(); // Correctly await the JSON parsing
             setTemplates(data2); // Save the fetched templates data
-            console.log(data2);
         } catch (error) {
             console.error('Error fetching templates:', error);
         }
@@ -48,7 +46,8 @@ export default function Body() {
                             <br />
                             <img src={meme.url} alt={meme.title} className='HeroImg'/>
                             <br />
-                            <a href={meme.url} download><Button outline gradientDuoTone="purpleToPink">
+                            <a href={meme.url} download>
+                                <Button outline gradientDuoTone="purpleToPink">
                                     Generate Random Meme.
                                 </Button>
                             </a>
