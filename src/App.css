@@ -106,7 +106,7 @@
 }
 .imgh{
     height: 52vh;
-    width: 90vw;
+    width: 52vw;
     border-radius: 25px;
     padding: 50px;
 }
@@ -177,10 +177,10 @@
     height: auto;
   }
   .card img{
-    height: 50%;
+    height: 45%;
   }
   .NVB p{
-    font-size: 20px;
+    font-size: 25px;
   }
   .HeroImg{
     width: 80%;

@@ -30,16 +30,14 @@ const HeroSection = () => {
       <div className="scroll-container overflow-x-hidden flex" ref={scrollContainerRef}>
 
 
-        <div className="card flex-shrink-0 w-screen md:w-1/3">
+        <div className="card flex-shrink-0 w-screen md:w-1/3 bg-white dark:bg-black ">
           <div>
             <img src={LQ} alt="High-quality meme generation" className='imgh' />
           </div>
-          <div className='text-start'>
-            <p className='Desc'>Generate High Quality Memes. Using Open Source Apis from github. Credit to Dev Daksan (D3VD) on github for the Meme Generating Api tied to reddit Memes.</p>
+          <div className='text-start '>
+            <p className='Desc text-black dark:text-white'>Generate High Quality Memes. Credit to Dev Daksan (D3VD) on github for the Meme Api.</p>
             <br />
-            <p className='Desc'>View Their Github <a href="https://github.com/D3vd/Meme_Api/tree/master"><span className='text-cyan-400'>Here</span></a></p>
-            <br />
-            <p className='Desc'>This project is part of the few API projects i made therefore sharing it would be of help by a ton</p>
+            <p className='Desc text-black dark:text-white'>View Their Github <a href="https://github.com/D3vd/Meme_Api/tree/master"><span className='text-cyan-400'>Here</span></a></p>
             <br />
             <Button outline gradientDuoTone="purpleToPink">
               Generate Random Memes
@@ -47,14 +45,15 @@ const HeroSection = () => {
           </div>
         </div>
 
-        <div className="card flex-shrink-0 w-screen md:w-1/3">
+        <div className="card flex-shrink-0 w-screen md:w-1/3 bg-white dark:bg-black ">
           <div>
             <img src={MT} alt="High-quality meme generation" className='imgh' />
           </div>
           <div className='text-start'>
-            <p className='Desc'>Generate High Quality Meme Templates. Using MemeGen.link Template Api. View The site <a href="https://memegen.link/" target='_blank'><span className='text-cyan-400'>Here</span></a></p>
+            <p className='Desc text-black dark:text-white'>Generate High Quality Meme Templates. Using MemeGen.link Template Api. </p>
             <br />
-            <p className='Desc'>This Uses a different Meme Template APi to generate different Templates </p>
+            <p className='Desc text-black dark:text-white'>View The site <a href="https://memegen.link/" target='_blank'><span className='text-cyan-400'>Here</span></a></p>
+            
             <br />
             <Button outline gradientDuoTone="tealToLime">
                 View Meme Templates.
@@ -62,14 +61,14 @@ const HeroSection = () => {
           </div>
         </div>
 
-        <div className="card flex-shrink-0 w-screen md:w-1/3">
+        <div className="card flex-shrink-0 w-screen md:w-1/3 bg-white dark:bg-black ">
           <div>
             <img src={HERO} alt="High-quality meme generation" className='imgh' />
           </div>
           <div className='text-start'>
-            <p className='Desc'>To view More Projetcs I made as well as my different roles in the programming World Check my github below:</p>
+            <p className='Desc text-black dark:text-white'>To view More Projects Check my github below:</p>
             <br />
-            <p className='Desc'>This Project is Made with ❤️ by Brian Ali</p>
+            <p className='Desc text-black dark:text-white'>This Project is Made with ❤️ by Brian Ali</p>
             <br />
             <a href="https://github.com/gamerfunky78" target='_blank'>
                 <Button outline gradientDuoTone="purpleToBlue">

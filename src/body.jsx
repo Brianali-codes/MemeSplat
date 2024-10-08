@@ -38,13 +38,13 @@ export default function Body() {
 
     return (
         
-                <div className="bg-white h-fit flex flex-col justify-center items-center gap-5">
+                <div className="bg-white dark:bg-black h-fit flex flex-col justify-center items-center gap-5">
 
-                    <p className="DescM text-2xl p-5 ">Generate Random Memes.</p>
+                    <p className="DescM text-2xl p-5 text-black dark:text-white ">Generate Random Memes.</p>
                     <hr />
                     {meme && (
                         <div className='text-center flex flex-col justify-center items-center '>
-                            <h2 className='Desc'>{meme.title}</h2>
+                            <h2 className='Desc text-black dark:text-white'>{meme.title}</h2>
                             <br />
                             <img src={meme.url} alt={meme.title} className='HeroImg'/>
                             <br />
@@ -58,13 +58,13 @@ export default function Body() {
                     <br /><br />
                     <hr />
                     <br /><br />
-                    <p className='text-center DescM'>Meme Templates.</p>
+                    <p className='text-center DescM text-black dark:text-white'>Meme Templates.</p>
                     <div className="TempContainer">
                         
                         {templates.map((template) => (
                             
                             <div key={template.id} className='flex flex-col justify-center items-center'> {/* Ensure to use a unique key for each item */}
-                                <p className='Desc'>{template.name}</p>
+                                <p className='Desc text-black dark:text-white'>{template.name}</p>
                                 <br />
                                 <img src={template.blank} alt="" className='IMG2' />
                                 <br />
