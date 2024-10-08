@@ -35,72 +35,72 @@ export default function Body() {
     }, []); // Empty dependency array ensures this runs once when the component mounts
 
     return (
-        
-                <div className="bg-white dark:bg-black h-fit flex flex-col justify-center items-center gap-5">
 
-                    <p className="DescM text-2xl p-5 text-black dark:text-white " id='GENMEME'>Generate Random Memes.</p>
-                    <hr />
-                    {meme && (
-                        <div className='STATS text-center justify-center items-center gap-5 '>
+        <div className="bg-white dark:bg-black h-fit flex flex-col justify-center items-center gap-5">
 
-                            <div className='flex flex-col justify-center items-center'>
-                                <h2 className='Desc text-black dark:text-white'>{meme.title}</h2>
-                                <br />
-                                <img src={meme.url} alt={meme.title} className='HeroImg'/>
-                                <br />
-                            </div>   
+            <p className="DescM text-2xl p-5 text-black dark:text-white " id='GENMEME'>Generate Random Memes.</p>
+            <hr />
+            {meme && (
+                <div className='STATS text-center justify-center items-center gap-5 '>
 
-                            <div className=' flex flex-col justify-center items-center gap-2'>
-
-                                
-                                <div className='flex flex-row justify-start Desc gap-4 border-solid border-2 border-black p-3 rounded-lg dark:border-white'>
-                                    <p className='text-black dark:text-white'>✍️{meme.author}.</p>
-                                    <p className='text-black dark:text-white'>🤍{meme.ups}.</p>
-                                </div>
-                                <br />
-                                <div className='flex flex-col justify-center items-center'>
-                                    <a href={meme.url} download>
-                                        <Button outline gradientDuoTone="purpleToPink">
-                                            Go to Reddit Page
-                                        </Button>
-                                        
-                                    </a>
-                                    <br />
-                                    <Button outline gradientDuoTone="purpleToPink" onClick={generateMeme}>
-                                            Generate Random Meme
-                                    </Button>
-                            
-                                </div>
-
-                            </div>
-                            
-                            <br />
-                            
-                
-                        </div>
-                    )}
-                    <br /><br />
-                    <hr />
-                    <br /><br />
-                    <p className='text-center DescM text-black dark:text-white' id='GENTEMP'>Meme Templates.</p>
-                    <div className="TempContainer">
-                        
-                        {templates.map((template) => (
-                            
-                            <div key={template.id} className='flex flex-col justify-center items-center'> {/* Ensure to use a unique key for each item */}
-                                <p className='Desc text-black dark:text-white'>{template.name}</p>
-                                <br />
-                                <img src={template.blank} alt="" className='IMG2' />
-                                <br />
-                                <a href={template.blank} download><Button outline gradientDuoTone="purpleToPink">
-                                    Get This Template.
-                                </Button>
-                                </a>
-                            </div>
-                        ))}
+                    <div className='flex flex-col justify-center items-center'>
+                        <h2 className='Desc text-black dark:text-white'>{meme.title}.</h2>
+                        <br />
+                        <img src={meme.url} alt={meme.title} className='HeroImg' />
+                        <br />
                     </div>
+
+                    <div className=' flex flex-col justify-center items-center gap-2'>
+
+
+                        <div className='flex flex-row justify-start Desc gap-4 border-solid border-2 border-black p-3 rounded-lg dark:border-white'>
+                            <p className='text-black dark:text-white'>✍️{meme.author}.</p>
+                            <p className='text-black dark:text-white'>🤍{meme.ups}.</p>
+                        </div>
+                        <br />
+                        <div className='flex flex-col justify-center items-center'>
+                            <a href={meme.url} download>
+                                <Button outline gradientDuoTone="purpleToPink">
+                                    Go to Reddit Page.
+                                </Button>
+
+                            </a>
+                            <br />
+                            <Button outline gradientDuoTone="purpleToPink" onClick={generateMeme}>
+                                Generate Random Meme.
+                            </Button>
+
+                        </div>
+
+                    </div>
+
+                    <br />
+
+
                 </div>
-        
-           
+            )}
+            <br /><br />
+            <hr />
+            <br /><br />
+            <p className='text-center DescM text-black dark:text-white' id='GENTEMP'>Meme Templates.</p>
+            <div className="TempContainer">
+
+                {templates.map((template) => (
+
+                    <div key={template.id} className='flex flex-col justify-center items-center'> {/* Ensure to use a unique key for each item */}
+                        <p className='Desc text-black dark:text-white'>{template.name}</p>
+                        <br />
+                        <img src={template.blank} alt="" className='IMG2' />
+                        <br />
+                        <a href={template.blank} download><Button outline gradientDuoTone="purpleToPink">
+                            Get This Template.
+                        </Button>
+                        </a>
+                    </div>
+                ))}
+            </div>
+        </div>
+
+
     );
 }

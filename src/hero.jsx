@@ -37,11 +37,11 @@ const HeroSection = () => {
           <div className='text-start '>
             <p className='Desc text-black dark:text-white'>Generate High Quality Memes. Credit to Dev Daksan (D3VD) on github for the Meme Api.</p>
             <br />
-            <p className='Desc text-black dark:text-white'>View Their Github <a href="https://github.com/D3vd/Meme_Api/tree/master"><span className='text-cyan-400'>Here</span></a></p>
+            <p className='Desc text-black dark:text-white'>View Their Github <a href="https://github.com/D3vd/Meme_Api/tree/master"><span className='text-cyan-400'>Here</span></a>.</p>
             <br />
             <a href="#GENMEME">
               <Button outline gradientDuoTone="purpleToPink">
-                Generate Random Memes
+                Generate Random Memes.
               </Button>
             </a>
           </div>
@@ -54,7 +54,7 @@ const HeroSection = () => {
           <div className='text-start'>
             <p className='Desc text-black dark:text-white'>Generate High Quality Meme Templates. Using MemeGen.link Template Api. </p>
             <br />
-            <p className='Desc text-black dark:text-white'>View The site <a href="https://memegen.link/" target='_blank'><span className='text-cyan-400'>Here</span></a></p>
+            <p className='Desc text-black dark:text-white'>View The site <a href="https://memegen.link/" target='_blank'><span className='text-cyan-400'>Here</span></a>.</p>
             
             <br />
             <a href="#GENTEMP">
@@ -72,7 +72,7 @@ const HeroSection = () => {
           <div className='text-start'>
             <p className='Desc text-black dark:text-white'>To view More Projects Check my github below:</p>
             <br />
-            <p className='Desc text-black dark:text-white'>This Project is Made with ❤️ by Brian Ali</p>
+            <p className='Desc text-black dark:text-white'>This Project is Made with ❤️ by Brian Ali.</p>
             <br />
             <a href="https://github.com/gamerfunky78" target='_blank'>
                 <Button outline gradientDuoTone="purpleToBlue">

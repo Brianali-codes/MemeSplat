@@ -1,24 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lilita+One&display=swap');
-html{
+
+html {
   scroll-behavior: smooth;
 }
-.TITLE{
-    font-family: "Lilita One", sans-serif;
-    font-size: 50px;
+
+.TITLE {
+  font-family: "Lilita One", sans-serif;
+  font-size: 50px;
 }
-.Header{
-    font-family: "Lilita One", sans-serif;
-    font-size: 30px;
+
+.Header {
+  font-family: "Lilita One", sans-serif;
+  font-size: 30px;
 }
-#BG{
-    background-image: url(assets/thumb-1920-165389.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
+
+#BG {
+  background-image: url(assets/thumb-1920-165389.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
 }
+
 .hero {
   width: 100%;
-  height: 75vh; /* Adjust based on the hero section size */
+  height: 75vh;
+  /* Adjust based on the hero section size */
   overflow: hidden;
   position: relative;
   background-color: transparent;
@@ -33,9 +39,11 @@ html{
   overflow-x: auto;
   scroll-behavior: smooth;
   padding: 30px;
-  gap: 20px; /* Space between cards */
+  gap: 20px;
+  /* Space between cards */
   align-items: center;
-  scroll-snap-type: x mandatory; /* Snap behavior */
+  scroll-snap-type: x mandatory;
+  /* Snap behavior */
 }
 
 .scroll-container::-webkit-scrollbar {
@@ -48,7 +56,8 @@ html{
 }
 
 .card {
-  flex: 0 0 90%; /* Ensure each card takes full width */
+  flex: 0 0 90%;
+  /* Ensure each card takes full width */
   height: fit-content;
   width: fit-content;
   background-color: white;
@@ -61,7 +70,8 @@ html{
   flex-direction: row;
   justify-content: center;
   text-align: center;
-  scroll-snap-align: center; /* Center card on scroll */
+  scroll-snap-align: center;
+  /* Center card on scroll */
 }
 
 .card h3 {
@@ -74,6 +84,7 @@ html{
   font-size: 1rem;
   color: #555;
 }
+
 .scroll-btn {
   position: absolute;
   top: 50%;
@@ -104,59 +115,71 @@ html{
 
 .scroll-btn:hover {
   background-color: rgba(219, 219, 219, 0.7);
-  
+
 }
-.imgh{
-    height: 52vh;
-    width: 52vw;
-    border-radius: 25px;
-    padding: 50px;
+
+.imgh {
+  height: 52vh;
+  width: 52vw;
+  border-radius: 25px;
+  padding: 50px;
 }
-.Desc{
-  font-family: Kanit,'Courier New', Courier, monospace;
+
+.Desc {
+  font-family: Kanit, 'Courier New', Courier, monospace;
   font-size: 22px;
 }
-.IMG2{
+
+.IMG2 {
   height: 350px;
   width: 400px;
   border-radius: 10px;
   border: 2px solid black;
 }
-.TempContainer{
+
+.TempContainer {
   display: grid;
-  grid-template-columns: repeat(3,1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 20px;
 }
-.HeroImg{
+
+.HeroImg {
   height: 500px;
   width: 500px;
   border-radius: 10px;
   border: 2px solid black;
 }
-.DescM{
+
+.DescM {
   text-decoration: underline;
   font-family: Kanit;
   font-size: 25px;
 }
-.STATS{
+
+.STATS {
   display: flex;
   flex-direction: row;
 
 }
-@media (max-width:768px){
-  .TempContainer{
+
+@media (max-width:768px) {
+  .TempContainer {
     display: flex;
     flex-direction: column;
   }
-  .TempContainer img{
+
+  .TempContainer img {
     width: 80%;
-  
+
   }
-  .STATS{
+
+  .STATS {
     flex-direction: column;
   }
+
   .card {
-    flex: 0 0 90%; /* Ensure each card takes full width */
+    flex: 0 0 90%;
+    /* Ensure each card takes full width */
     height: fit-content;
     width: fit-content;
     background-color: white;
@@ -169,32 +192,39 @@ html{
     flex-direction: row;
     justify-content: center;
     text-align: center;
-    scroll-snap-align: center; /* Center card on scroll */
+    scroll-snap-align: center;
+    /* Center card on scroll */
   }
+
   .scroll-container {
     display: flex;
     overflow-x: auto;
     scroll-behavior: smooth;
     padding: 20px;
-    gap: 20px; /* Space between cards */
+    gap: 20px;
+    /* Space between cards */
     align-items: center;
-    scroll-snap-type: x mandatory; /* Snap behavior */
+    scroll-snap-type: x mandatory;
+    /* Snap behavior */
   }
-  .card{
+
+  .card {
     display: flex;
     flex-direction: column;
     height: auto;
   }
-  .card img{
+
+  .card img {
     height: 45%;
   }
-  .NVB p{
+
+  .NVB p {
     font-size: 25px;
   }
-  .HeroImg{
+
+  .HeroImg {
     width: 80%;
     height: 90%;
   }
 
 }
-
