@@ -49,8 +49,8 @@ export default function Body() {
                             <img src={meme.url} alt={meme.title} className='HeroImg'/>
                             <br />
                             <div className='flex flex-row justify-start Desc gap-4 border-solid border-2 border-black p-3 rounded-lg dark:border-white'>
-                                <p className='text-black dark:text-white'>👩🏻‍💻{meme.author}</p>
-                                <p className='text-black dark:text-white'>🧡{meme.ups}</p>
+                                <p className='text-black dark:text-white'>✍️{meme.author}</p>
+                                <p className='text-black dark:text-white'>🤍{meme.ups}</p>
                             </div>
                             
                             <br />
