@@ -1,8 +1,6 @@
-# React + Vite
+#MemeSplat
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This is a meme generating website that uuses different open source Apis from MemeGen and D3vds Memegenerator 
+You can fork and clone the repo to continue or submit new adjusments by entering this on your command line:
+<br/>
+<pre><code>git clone https://github.com/gamerfunky78/MemeSplat </code></pre>
