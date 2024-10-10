@@ -64,7 +64,7 @@ export default function Body() {
                         <br />
                         <div className='flex flex-col justify-center items-center'>
                             <a href={meme.url} download>
-                                <Button outline gradientDuoTone="purpleToPink">
+                                <Button outline gradientDuoTone="purpleToBlue">
                                     Go to Reddit Page.
                                 </Button>
 
