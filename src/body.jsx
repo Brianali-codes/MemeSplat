@@ -32,7 +32,9 @@ export default function Body() {
     useEffect(() => {
         generateMeme();
         generateTemplate();
-    }, []); // Empty dependency array ensures this runs once when the component mounts
+    }, 
+    [])
+    ; 
 
     return (
 
@@ -96,7 +98,7 @@ export default function Body() {
                         <br />
                         <img src={template.blank} alt="" className='IMG2' />
                         <br />
-                        <a href={template.blank} download><Button outline gradientDuoTone="purpleToPink">
+                        <a href={template.blank} download><Button outline gradientDuoTone="purpleToBlue">
                             Get This Template.
                         </Button>
                         </a>
