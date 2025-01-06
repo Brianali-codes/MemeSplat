@@ -3,6 +3,9 @@
 html {
   scroll-behavior: smooth;
 }
+body::-webkit-scrollbar {
+  display: none; 
+}
 
 .TITLE {
   font-family: "Lilita One", sans-serif;
